@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Sbutton from "../../Components/Sbutton";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import './App.css';
 
 // Custom Next Arrow
 const NextArrow = ({ onClick }) => {
@@ -89,7 +90,7 @@ function Third() {
 
     return (
         <>
-        <div className="w-[100%] m-auto block px-4 py-7 sm:px-4 sm:py-7 md:px-14 md:py-14 overflow-x-hidden">
+        <div className="w-[100%] m-auto block! px-4 py-7 sm:px-4 sm:py-7 md:px-14 md:py-14 overflow-x-hidden">
 
         <div className="flex flex-col items-center">
 
