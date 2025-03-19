@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Sbutton from "../../Components/Sbutton";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import './App.css';
+
 
 // Custom Next Arrow
 const NextArrow = ({ onClick }) => {
