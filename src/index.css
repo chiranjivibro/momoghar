@@ -1,0 +1,14 @@
+
+@import "tailwindcss";
+
+@import '@fontsource/inter';
+
+@theme {
+    --font-primary-head: "Inter", "serif";
+    --font-primary-subhead: "Allura", "serif"; 
+    --font-primary-mid: "Chela One", "serif";
+  }
+  
+
+
+  
