@@ -90,7 +90,7 @@ function Third() {
 
     return (
         <>
-        <div style={{ display: 'block!important' }} className=" w-[100%] m-auto px-4 py-7 sm:px-4 sm:py-7 md:px-14 md:py-14 overflow-x-hidden">
+        <div className="!block w-full mx-auto px-4 py-7 sm:px-4 sm:py-7 md:px-14 md:py-14 overflow-x-hidden">
 
         <div className="flex flex-col items-center">
 
@@ -128,7 +128,7 @@ function Third() {
         </div>
 
         {/* Recipe Slider Section */}
-        <div style={{ display: 'block!important' }} className=" w-[100%] flex flex-row flex-wrap gap-5 mt-1 sm:mt-1 md:mt-10 py-2 justify-center overflow-x-hidden">
+        <div className=" w-full mx-auto flex flex-row flex-wrap gap-5 mt-1 sm:mt-1 md:mt-10 py-2 justify-center overflow-x-hidden">
         {filterproducts.length > 0 ? (
           <Slider {...settings}
           nextArrow={<NextArrow />}
