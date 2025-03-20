@@ -104,17 +104,13 @@ function Cart() {
             </div>
           </div>
         ) : (
-          <div className="w-[1234px] m-auto py-20 font-primary-head text-center">
+          <div className="w-[100%] m-auto px-4 py-7  font-primary-head text-center">
           <NavLink to="/menu">
-            <img
-              className="w-[50%] m-auto"
-              src={Ecartt}
-              alt=""
-            />
+            <img src={Ecartt} alt="cart" className="m-auto max-w-full h-auto md:w-[60%]" />
           </NavLink>
-          <p className="font-semibold p-5 text-2xl ">
+          <p className="font-semibold p-5 text-[20px] sm:text-[20px] md:text-[23px]">
             Empty Cart{" "}
-            <NavLink to="/menu" className="underline text-red-500">
+            <NavLink to="/menu" className="underline text-[#da580c] ml-[15px] hover:text-[#0c6967] cursor-pointer">
                Shop Now
             </NavLink>
           </p>
