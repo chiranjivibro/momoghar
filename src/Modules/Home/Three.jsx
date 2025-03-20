@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { TiArrowLeft, TiArrowRight } from "react-icons/ti";
+import Sbutton from "../../Components/Sbutton";
 
 function Three() {
   const [products, setProducts] = useState([]);
@@ -37,19 +38,21 @@ function Three() {
   }, [embla]);
 
   return (
-    <div className="relative max-w-full m-auto px-4 py-7 sm:px-4 sm:py-7 md:px-14 md:py-14">
+    <>
+    <div className="relative max-w-full m-auto px-4 py-7 sm:px-4 sm:py-7 md:px-14 md:py-14 font-primary-head">
+
       {/* Title Section */}
-      <div className="text-center">
+      <div className="text-center mb-[50px]">
         <h2 className="font-bold text-[27px] sm:text-[27px] md:text-[39px] tracking-wide">
           Our <span className="text-[#D95103]">Most Popular</span> Recipes
         </h2>
-        <p className="text-[16px] sm:text-[16px] md:text-[20px] tracking-wide text-[#6B788E] my-3">
+        <p className="text-[16px] sm:text-[16px] md:text-[19px] tracking-wide text-[#6B788E] my-3">
           Browse through a variety of recipes with fresh ingredients selected from the best places.
         </p>
       </div>
 
       {/* Cuisine Filter Buttons */}
-      <div className="flex justify-center gap-4 my-10">
+      <div className="flex justify-center gap-4 mb-[77px]">
         {["Italian", "Asian", "American"].map((cuisine) => (
           <button
             key={cuisine}
@@ -62,12 +65,12 @@ function Three() {
       </div>
 
       {/* Embla Carousel */}
-      <div className="relative max-w-4xl mx-auto">
+      <div className="relative max-w-full m-auto">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {(filterproducts.length > 0 ? filterproducts : products).map((product, index) => (
               <div key={index} className="flex-none w-full md:w-1/3 px-2">
-                <div className="flex flex-col items-center bg-white rounded-lg shadow-md p-4">
+                <div className="flex flex-col items-center bg-white rounded-lg p-4">
                   <div className="h-40 w-40">
                     <img
                       src={product.image}
@@ -77,7 +80,7 @@ function Three() {
                   </div>
                   <p className="font-bold text-[18px] mt-5">{product.name}</p>
                   <p className="font-semibold text-[15px] my-3">
-                    Calories: <span className="text-[#D95103] text-[23px] font-extrabold">
+                    Rs: <span className="text-[#D95103] text-[23px] font-extrabold">
                       {product.caloriesPerServing}
                     </span>
                   </p>
@@ -89,21 +92,27 @@ function Three() {
 
         {/* Navigation Buttons */}
         <button
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-full p-2"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-full p-2 border-[1px] border-[#DFE2E6] focus:outline-0 cursor-pointer"
           onClick={scrollPrev}
         >
-          <ChevronLeft className="w-6 h-6" />
+          <TiArrowLeft  className="w-6 h-6" />
         </button>
         <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-full p-2"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-full p-2 border-[1px] border-[#DFE2E6] focus:outline-0 cursor-pointer"
           onClick={scrollNext}
         >
-          <ChevronRight className="w-6 h-6" />
+          <TiArrowRight  className="w-6 h-6" />
         </button>
       </div>
 
       {products.length === 0 && <div className="text-center text-gray-500">No recipes available.</div>}
+
+      
     </div>
+    <div className="w-[100%] m-auto flex justify-center pb-[60px]">
+    <Sbutton title="Explore Our Menu"/>
+    </div>
+    </>
   );
 }
 
