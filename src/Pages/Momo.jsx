@@ -5,26 +5,21 @@ import Four from "../Modules/Home/Four";
 import Second from "../Modules/Home/Second";
 import Seven from "../Modules/Home/Seven";
 import Six from "../Modules/Home/Six";
-import Third from "../Modules/Home/Third";
+import Three from "../Modules/Home/Three";
 import ThirdH from "../Modules/Home/ThirdH";
-
-
-
-
-
 function Momo() {
     return(
         <>
         <div>
-        <First/>
-        <Second/>
-        <Third/>
-        <ThirdH/>
-        <Four/>
-        <Five/>
-        <Six/>
-        <Seven/>
-        <Eight/>
+            <First/>
+            <Second/>
+            <Three/>
+            <ThirdH/>
+            <Four/>
+            <Five/>
+            <Six/>
+            <Seven/>
+            <Eight/>
         </div>
         </>
     );
