@@ -23,12 +23,12 @@ function ProductDescription() {
 
     return(
         <>
-         <div className="w-[100%] m-auto px-4 sm:px-4 md:px-4 lg:px-14 py-7 sm:py-7 md:py-7 lg:py-14">
+         <div className="w-[100%] m-auto px-4 pt-[135px] sm:px-4 sm:pt-[135px] md:px-4 md:pt-[141px] lg:px-14 lg:pt-[151px] pb-7 sm:pb-7 md:pb-7 lg:pb-14">
       {products ? (
         <div className="flex flex-col sm:flex-col md:flex-row justify-around shadow-[0px_6px_21px_0px_rgba(0,_0,_0,_0.1)]">
 
           <div className="w-[100%] sm:w-[100%] md:w-[50%] bg-[#fcfbfb] flex flex-col p-5 mb-10 sm:mb-10 md:mb-0">
-            <img src={products.image} className="w-32 sm:w-32 h-32 sm:h-32 m-auto lg:m-0 lg:ml-10 rounded-[50%] shadow-[0px_4px_21px_0px_rgba(0,_0,_0,_0.1)]" alt="" />
+            <img src={products.image} className="w-32 h-32 m-auto sm:w-32 sm:h-32 sm:m-0 md:m-0 md:ml-10 lg:m-0 lg:ml-10 rounded-[50%] shadow-[0px_4px_21px_0px_rgba(0,_0,_0,_0.1)]" alt="" />
             <div className="flex flex-col ml-0 sm:ml-0 md:ml-10 mt-7">
               <p className="font-primary-head font-medium text-[16px] mb-1.5">{products.name}</p>
               <p className="font-primary-head font-bold text-[21px] text-[#D95103] mb-1.5">Rs. {products.caloriesPerServing}</p>

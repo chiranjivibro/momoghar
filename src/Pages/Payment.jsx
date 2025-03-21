@@ -21,7 +21,7 @@ function Payment() {
     <div>
       <body>
         <form
-          className="w-[100%] m-auto pl-14 pr-14 py-16 font-primary-head space-x-4 "
+          className="w-[100%] m-auto px-14 pt-[135px] pb-16 font-primary-head space-x-4"
           action="https://rc-epay.esewa.com.np/api/epay/main/v2/form"
           method="POST"
         >

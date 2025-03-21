@@ -14,7 +14,9 @@ function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="border-b-2 border-gray-500 overflow-x-hidden">
+   <>
+   <header className="bg-white fixed top-0 w-full z-50 shadow-md">
+   <div className="border-b-2 border-gray-500 overflow-x-hidden">
       <div className="w-full m-auto px-4 sm:px-4 md:px-4 lg:px-5 xl:px-14 2xl:px-14 ">
         <div className="flex justify-between items-center my-5 pb-2 pt-2 font-primary-head">
           
@@ -125,6 +127,8 @@ function NavBar() {
         </div>
       </div>
     </div>
+   </header>
+   </>
   );
 }
 

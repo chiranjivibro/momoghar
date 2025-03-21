@@ -11,7 +11,7 @@ function Success() {
     let  x =  JSON.parse(decoded);
     console.log(x.total_amount)
     return(
-        <div className="w-[100%] m-auto pl-14 pr-14 py-16 text-center font-primary-head">
+        <div className="w-[100%] m-auto px-14 pt-[131px] pb-16 text-center font-primary-head">
             <img className="w-[40%] m-auto" src={okuccess} alt=""/>
             <h2 className='font-bold text-[#2caa27] my-3 text-[25px]'>Payment Success </h2>
            <p className='font-normal mb-1.5'>Total Amount: Rs.{x.total_amount}</p> 

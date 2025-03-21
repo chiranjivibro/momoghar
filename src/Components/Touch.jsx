@@ -6,7 +6,7 @@ function Touch({title}) {
         <>
        <div className="flex justify-center m-auto">
        <button onClick={() => {
-            Navigate("/");
+            Navigate("/contact");
         }} className="bg-[#0C6967] text-white px-7 py-5 flex items-center gap-2 
         rounded-[45px] hover:bg-[#0C6967] text-[16px] font-primary-head tracking-[1px] mt-16 cursor-pointer">
            {title} 

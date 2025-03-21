@@ -6,7 +6,7 @@ function Login() {
     console.log(user)
     return(
         <>
-         <div className="flex items-center justify-center py-11 px-4 sm:px-4 md:px-4 max-h-screen bg-gray-100 font-primary-head">
+         <div className="flex items-center justify-center pb-11 px-4 pt-[143px] sm:px-4 sm:pt-[143px] md:px-4 md:pt-[143px] max-h-screen bg-gray-100 font-primary-head">
       <form className="bg-white p-6 rounded-md shadow-lg border border-gray-300 w-96">
         <h2 className="text-2xl font-semibold text-center mb-6">Login</h2>
 

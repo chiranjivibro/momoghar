@@ -3,7 +3,7 @@ import servicess from '../../assets/servicess.png';
 function OneAa() {
     return(
         <>
-         <div className="w-[100%] m-auto px-4 sm:px-4 md:px-14 flex flex-col sm:flex-col md:flex-row justify-between align-middle py-7 sm:py-7 md:py-14">
+         <div className="w-[100%] m-auto px-4 pt-[115px] sm:px-4 sm:pt-[115px] md:px-14 md:pt-[115px] lg:pt-[150px] flex flex-col sm:flex-col md:flex-row justify-between align-middle pb-7 sm:pb-7 md:py-14">
                 <div className='w-[100%] sm:w-[100%] md:w-[50%] mt-5 sm:mt-5 md:mt-10 text-start'>
                     <h2 className='font-primary-subhead font-light text-[37px] sm:text-[37px] md:text-[53px] text-[#0C6967]'>Allergy Adivces</h2>
                 

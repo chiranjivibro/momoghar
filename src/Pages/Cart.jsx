@@ -18,7 +18,7 @@ function Cart() {
          <div>
       <div>
         {state.cartItems.length > 0 ? (
-          <div className="w-[100%] m-auto px-4 sm:px-4 md:px-4 lg:px-14 py-7 sm:py-7 md:py-7 lg:py-16 flex flex-col sm:flex-col md:flex-col lg:flex-row justify-center">
+          <div className="w-[100%] m-auto px-4 pt-[131px] sm:px-4 sm:pt-[131px] md:px-4 md:pt-[131px] lg:px-14 lg:pt-[141px] py-7 sm:py-7 md:py-7 lg:py-16 flex flex-col sm:flex-col md:flex-col lg:flex-row justify-center">
 
             <div className="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[65%] p-5 bg-[#fafafa] font-primary-head">
               {state.cartItems.map((Item) => {
@@ -104,7 +104,7 @@ function Cart() {
             </div>
           </div>
         ) : (
-          <div className="w-[100%] m-auto px-4 py-7  font-primary-head text-center">
+          <div className="w-[100%] m-auto px-4 pt-[131px] sm:pt-[115px] md:pt-[115px] pb-7 font-primary-head text-center">
           <NavLink to="/menu">
             <img src={Ecartt} alt="cart" className="m-auto max-w-full h-auto md:w-[60%]" />
           </NavLink>

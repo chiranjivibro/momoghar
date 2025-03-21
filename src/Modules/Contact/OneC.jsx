@@ -5,7 +5,7 @@ import { IoTime } from "react-icons/io5";
 function OneC() {
     return(
         <>
-        <div className="w-[100%] m-auto px-4 sm:px-4 md:px-4 lg:px-14 py-5 sm:py-5 md:py-7 lg:py-16">
+        <div className="w-[100%] m-auto px-4 pt-[141px] sm:px-4 sm:pt-[141px] md:px-4 md:pt-[141px] lg:px-14 lg:pt-[151px] pb-5 sm:pb-5 md:pb-7 lg:pb-16">
             <h2 className="font-primary-subhead font-light text-[33px] sm:text-[33px] md:text-[35px] lg:text-[56px] text-[#0C6967] text-center">Our Contact</h2>
             <h3 className="font-primary-head font-light uppercase text-[18px] sm:text-[18px] md:text-[19px] lg:text-[24px] text-[#6B788E] tracking-wider mt-6 text-center">Get in Touch</h3>
             <p className="font-primary-head font-semibold text-[27px] sm:text-[27px] md:text-[29px] lg:text-[31px] tracking-wide mt-4 text-center">

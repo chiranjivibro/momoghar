@@ -10,7 +10,7 @@ function TwoS() {
                     <div className='absolute inset-0 bg-black opacity-55'></div>
 
                     <div className='relative w-[100%] m-auto'>
-                        <div className='absolute top-[45px] sm:top-[70px] md:top-[25px] lg:top-[71px] xl:top-[195px] left-[0px] sm:left-[0px] md:left-[56px]'>
+                        <div className='absolute top-[119px] sm:top-[139px] md:top-[81px] lg:top-[227px] xl:top-[261px] left-[0px] sm:left-[0px] md:left-[0px]'>
                         <h2 className='font-primary-head font-bold text-[29px] sm:text-[29px] md:text-[49px] text-white drop-shadow-md mt-5 tracking-wide'>
                         Dine With Us</h2>
                         <p className='font-primary-head font-normal text-[16px] sm:text-[16px] md:text-[25px] text-white drop-shadow-md mt-3 tracking-wide'>

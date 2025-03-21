@@ -4,7 +4,7 @@ import paymentfail from '../assets/paymentfail.jpg';
 function Failure() {
     return(
         <>
-         <div className="py-14 text-center font-primary-head">
+         <div className="pt-[137px] sm:pt-[137px]  pb-14 text-center font-primary-head">
             <img src={paymentfail} alt="payment-fail" className="w-[25%] m-auto"/>
             <h2 className="font-bold text-[23px] text-[#F64742] tracking-wider mb-1.5">Payment Fail</h2>
             <p className="font-semibold text-[25px]">Your Payment has Failed. 

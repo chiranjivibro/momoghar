@@ -10,7 +10,7 @@ function TwoA() {
                     <div className='absolute inset-0 bg-black opacity-55'></div>
 
                     <div className='relative w-[100%] m-auto'>
-                        <div className='absolute top-[45px] sm:top-[75px] md:top-[47px] lg:top-[71px] xl:top-[125px] left-0'>
+                        <div className='absolute top-[100px] sm:top-[167px] md:top-[103px] lg:top-[147px] xl:top-[261px] left-0'>
                         <h2 className='font-primary-head font-bold text-[29px] sm:text-[29px] md:text-[49px] text-white drop-shadow-md mt-5 tracking-wide'>
                             Process behind the making</h2>
                         <p className='font-primary-head font-normal text-[16px] sm:text-[16px] md:text-[25px] text-white drop-shadow-md mt-3 tracking-wide'>

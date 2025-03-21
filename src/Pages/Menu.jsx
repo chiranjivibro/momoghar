@@ -20,7 +20,7 @@ function Menu() {
         }, []);
 
     return(
-        <div className="w-[100%] m-auto px-4 sm:px-4 md:px-4 lg:px-14 py-6 sm:py-6 md:py-6 lg:py-12 font-primary-head">
+        <div className="w-[100%] m-auto px-4 pt-[131px] sm:px-4 sm:pt-[131px] md:px-4 md:pt-[141px] lg:px-14 lg:pt-[151px] pb-6 sm:pb-6 md:pb-6 lg:pb-12 font-primary-head">
           <div className="text-center">
             <h2 className="text-[39px] sm:text-[39px] md:text-[39px] lg:text-[56px] text-[#0C6967] font-primary-subhead mb-4">Our Menu</h2>
             <h3 className="text-[27px] sm:text-[27px] md:text-[27px] lg:text-[31px] text-[#D95103] font-semibold">Our menu is more than just momos,</h3>

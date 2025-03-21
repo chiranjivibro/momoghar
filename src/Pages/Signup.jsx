@@ -38,7 +38,7 @@ const [username, setUsername] = useState('');
   };
     return(
         <>
-        <div className='w-[100%] m-auto px-4 sm:px-4 md:px-4 lg:px-4 xl:px-14 py-6 sm:py-6 md:py-6 lg:py-6 xl:py-16 flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-row justify-center items-center font-primary-head'>
+        <div className='w-[100%] m-auto px-4 pt-[131px] sm:px-4 sm:pt-[131px] md:px-4 md:pt-[131px] lg:px-4 lg:pt-[141px] xl:px-14 xl:pt-[151px] py-6 sm:pb-6 md:pb-6 lg:pb-6 xl:pb-16 flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-row justify-center items-center font-primary-head'>
 
           <div className='w-[100%] sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-[50%] m-auto flex justify-center'>
               <div style={{backgroundImage:`url(${Signin})`}}

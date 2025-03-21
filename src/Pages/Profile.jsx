@@ -10,19 +10,11 @@ function Profile() {
     }
 
     return (
-        <div className="profile-container w-full pr-14 pl-14 py-14 font-primary-head">
+        <div className="profile-container w-full px-7 pt-[133px] sm:pt-[133px] pb-14 font-primary-head">
             <h2 className="text-2xl font-bold mb-4 text-center text-[#0C6967]">My Profile</h2>
             {isAuthenticated ? (
-                <div className="profile-details flex flex-col flex-wrap justify-between items-center text-center">
-                    <div className="profile-item mb-3">
-                        <h3 className="text-lg font-semibold text-[#0C6967]">Name:</h3>
-                        <p>{user.name}</p>
-                    </div>
-                    <div className="profile-item mb-3">
-                        <h3 className="text-lg font-semibold text-[#0C6967]">Email:</h3>
-                        <p>{user.email}</p>
-                    </div>
-                    <div className="profile-item">
+                <div className="profile-details flex flex-col flex-wrap justify-between">
+                     <div className="profile-item mb-3">
                         <h3 className="text-lg font-semibold text-[#0C6967]">Profile Picture:</h3>
                         <img 
                             src={user.picture} 
@@ -30,6 +22,15 @@ function Profile() {
                             className="h-32 w-32 rounded-full object-cover" 
                         />
                     </div>
+                    <div className="profile-item mb-3">
+                        <h3 className="text-lg font-semibold text-[#0C6967]">Name:</h3>
+                        <p>{user.name}</p>
+                    </div>
+                    <div className="profile-item">
+                        <h3 className="text-lg font-semibold text-[#0C6967]">Email:</h3>
+                        <p>{user.email}</p>
+                    </div>
+                   
                 </div>
             ) : (
                 <p className="font-primary-head text-[17px] text-[#0C6967] text-center py-10">You are not logged in. Please log in to view your profile.</p>

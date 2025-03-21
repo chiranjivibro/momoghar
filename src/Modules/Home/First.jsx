@@ -7,7 +7,7 @@ import Sbutton from "../../Components/Sbutton";
 function First() {
     const Navigate = useNavigate();
     return (
-      <div className="w-full m-auto px-4 sm:px-4 md:px-0 lg:px-0 py-8 sm:py-12 md:py-0 lg:py-0  xl:py-0 overflow-x-hidden">
+      <div className="w-full m-auto px-4 pt-[145px] sm:px-4 sm:pt-[145px] sm:pb-12 md:px-0 md:pt-[105px] md:pb-0 lg:px-0 lg:pt-[105px] lg:pb-0  xl:pt-[103px] xl:pb-0 overflow-x-hidden">
         <div className="flex flex-col md:flex-row justify-between gap-5">
           <div className="relative h-auto mb-6 md:mb-0 md:pl-4 md:pt-20 xl:pl-14 xl:py-24">
             <h6 className="font-primary-head font-normal text-[#6B788E] text-[16px] tracking-[2px] uppercase">
@@ -36,7 +36,7 @@ function First() {
   
           <div className="overflow-hidden relative flex justify-center md:justify-end md:align-middle md:items-center xl:items-center xl:align-middle xl:py-24">
             <img src={momoOne} alt="Momo Image" className="max-w-full h-auto z-40" />
-            <img src={circle} alt="Circle Background" className="absolute h-[214px] -right-0 top-[-7px] sm:h-[420px] md:h-[595px] md:-right-[25px] xl:h-[682px] xl:top-[-7px]" />
+            <img src={circle} alt="Circle Background" className="absolute h-[214px] -right-0 top-[-7px] sm:h-[420px] md:h-[547px] md:-right-[25px] xl:h-[682px] xl:top-[-7px]" />
           </div>
         </div>
       </div>
