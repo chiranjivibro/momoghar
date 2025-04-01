@@ -13,6 +13,11 @@ function NavBar() {
   // Mobile menu state
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Close the menu on item click
+  const handleMenuClick = () => {
+    setMenuOpen(false); // Close the mobile menu
+  };
+
   return (
    <>
    <header className="bg-white fixed top-0 w-full z-50 shadow-md">
@@ -95,14 +100,15 @@ function NavBar() {
         </div>
 
         {/* Mobile Menu - Displayed when 'menuOpen' state is true */}
-        <div className={`xl:hidden ${menuOpen ? 'block' : 'hidden'} absolute top-16 left-0 w-full z-50 mt-10 bg-[#F7F9FC] shadow-lg`}>
+        <div className={`xl:hidden ${menuOpen ? 'block' : 'hidden'} absolute top-16 left-0 w-full z-50 mt-10 bg-[#F7F9FC] shadow-lg transition-transform transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="flex flex-col items-center gap-y-4 py-5">
-            <NavLink to="/about" className="text-lg font-medium">About Us</NavLink>
-            <NavLink to="/menu" className="text-lg font-medium">Our Menu</NavLink>
-            <NavLink to="/services" className="text-lg font-medium">Our Services</NavLink>
-            <NavLink to="/advice" className="text-lg font-medium">Allergy Advice</NavLink>
-            <NavLink to="/contact" className="text-lg font-medium">Contact Us</NavLink>
+            <NavLink to="/about" className="text-lg font-medium" onClick={handleMenuClick}>About Us</NavLink>
+            <NavLink to="/menu" className="text-lg font-medium" onClick={handleMenuClick}>Our Menu</NavLink>
+            <NavLink to="/services" className="text-lg font-medium" onClick={handleMenuClick}>Our Services</NavLink>
+            <NavLink to="/advice" className="text-lg font-medium" onClick={handleMenuClick}>Allergy Advice</NavLink>
+            <NavLink to="/contact" className="text-lg font-medium" onClick={handleMenuClick}>Contact Us</NavLink>
 
+            {/* Login/Sign Up Links in Mobile */}
             {isAuthenticated ? (
               <NavLink
                 onClick={() => {
@@ -114,12 +120,12 @@ function NavBar() {
               </NavLink>
             ) : (
               <div className="space-y-3">
-                <NavLink to="/login" className="text-lg font-medium">Login </NavLink> 
-                <NavLink to="/signUp" className="text-lg font-medium">Sign Up</NavLink>
+                <NavLink to="/login" className="text-lg font-medium" onClick={handleMenuClick}>Login</NavLink> 
+                <NavLink to="/signUp" className="text-lg font-medium" onClick={handleMenuClick}>Sign Up</NavLink>
               </div>
             )}
 
-            <NavLink to="/cart" className="relative text-xl font-medium">
+            <NavLink to="/cart" className="relative text-xl font-medium" onClick={handleMenuClick}>
               <span className="absolute -top-2.5 -right-4 text-[#D95103]">{totalItems}</span>
               <FaCartArrowDown size={25} />
             </NavLink>
